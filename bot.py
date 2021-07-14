@@ -94,7 +94,8 @@ def process_voice_message(message):
 
     language_groups_text = []
     for i in language_groups:
-        text = f'Language group: {i[0]} with probability: {i[-1]}'
+        group = ', '.join(i[0])
+        text = f'Language group: {group} with probability: {i[-1]}'
         language_groups_text.append(text)
 
     bot.reply_to(message, '\n\n'.join(language_groups_text))
