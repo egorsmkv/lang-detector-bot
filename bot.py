@@ -1,6 +1,7 @@
 """
-URL: t.me/ukr_stt_bot
+URL: t.me/silero_lang_classifier_bot
 """
+
 import json
 import warnings
 
