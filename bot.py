@@ -36,13 +36,13 @@ FIRST_STEP = '''It is so simple to use this bot: just send an audio message here
 
 device = torch.device('cpu')
 
-jit_model = dirname(__file__) + '/model/lang_classifier_116.jit'
+jit_model = dirname(__file__) + '/model/lang_classifier_95.jit'
 model = init_jit_model(jit_model, device=device)
 
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
-lang_dict_file = dirname(__file__) + '/model/lang_dict_116.json'
-lang_group_dict_file = dirname(__file__) + '/model/lang_group_dict_116.json'
+lang_dict_file = dirname(__file__) + '/model/lang_dict_95.json'
+lang_group_dict_file = dirname(__file__) + '/model/lang_group_dict_95.json'
 
 with open(lang_dict_file, 'r') as f:
     lang_dict = json.load(f)
